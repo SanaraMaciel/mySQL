@@ -1,0 +1,15 @@
+Funções MYSQL
+
+data e hora : date_format  / date _add / date_sub 
+
+
+Anomalia de inserção e anomalia de remoção e anomalia de atualização 
+
+
+teoria da normalização FN : forma normal 
+
+1FN -
+2FN -
+3FN -
+
+

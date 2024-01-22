@@ -1,0 +1,24 @@
+Fazendo backup no MySQL Workbench
+
+DUMP é igual Backup 
+
+Dump Structure and Dat:  pode-se exportar a estrutura e os dados.
+
+Dump Dat only: exporta somente os dados e não a estrutura do banco. 
+
+Dump Structury Only: exporta somente a estrutura do banco e não os dados.
+
+exportar em arquivo único: export to self- contained file
+
+exportar em vários arquivos: export to dump project folder
+
+->>marcar include create schema para poder vir o script de criação do banco de dados. 
+
+->> digita a senha caso houver ->> clica em exportar e tarah ta pronto. 
+
+Criando o banco com o Dump gerado:
+
+->> clica em server date Import ->> seleciona a pasta que está o dump ou o arquivo que foi gerado
+->> clica em start e import e pronto 
+
+

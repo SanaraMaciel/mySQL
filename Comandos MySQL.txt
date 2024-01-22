@@ -1,0 +1,113 @@
+CRIANDO TABELAS
+
+create table pessoas(
+
+nome varchar(30),
+idade tinyint,
+sexo char(1),
+peso float,
+altura float,
+
+nacionalidade varchar(20)
+);
+
+COMANDO PARA DESCREVER A TABELA
+
+
+no ínicio do comando tbm funciona somente no início doc comando
+
+
+desc pessoas;
+describe pessoas;
+
+COMANDO PARA USAR UM BANCO DE DADOS:
+use nome do banco;
+
+SHOW TABLES MOSTRA TODAS AS TABELAS QUE POSSUI NO BANCO SELECIONADO
+show tables;
+
+EXIT; sai das especificações da tabela.  
+
+
+criando o banco com codificação utf-8
+
+create database cadastro 
+default character set utf-8
+default collate utf-8_general_ci;
+
+criando tabelas com caractere utf8 
+
+create table pessoas(
+
+nome varchar(30)not null,
+
+nascimento date,
+
+sexo enum('m', 'f', 'M', 'F'),
+
+peso decimal(5,2),
+
+altura decimal(3,2),
+
+nacionalidade varchar(20) default 'Brasil'
+)default charset = utf8; 
+
+comando insert into:
+
+insert into pessoas (nome,nascimento,sexo,peso,altura,nacionalidade) values ('José','1993-07-27','m', 75,1.87,'Brasil');
+
+comando para alterar estrutura da tabela:
+
+alterando coluna: alter table pessoas add column profissao varchar(10);
+
+apagando coluna: alter table pessoas drop column profissao;
+adicionando coluna depois de outra coluna : alter table pessoas add column profissao varchar(10) after nome;
+obs: não existe a palavra de comando before para ordem de inserção. 
+
+
+adicionando para primeiro campo: alter table pessoas add column codigo int first;
+
+modificando o tamanho ou tipo de dados de uma coluna(Modify): alter table pessoas modify column profissao varchar(50);
+
+modificar o nome da coluna seus tipos primitivos ou constraints(change) tem q renomear a coluna e colocar todas
+as constraints e sempre com anterior e próximo escolhido: alter table pessoas change column profissao prof varchar(50);
+
+
+modificar o nome de uma tabela inteira(rename to): alter table pessoas rename to gafanhotos; 
+
+unsigned significa sem sinal ou seja sem sinal negativo 
+create table if not exists cursos(
+
+
+nome varchar(30) not null unique ,
+
+descricao text,
+
+carga int unsigned,
+
+totaulas int unsigned,
+
+ano Year default '2016'
+)default charset = utf8;	
+
+
+
+adicionando a coluna idcurso: alter table cursos add column idcurso int first; 
+adicionando a chave primária: 	alter table cursos add primary key(idcurso); 
+
+modificando dados em uma tabela: update cursos set nome='HTML5' where idcurso = '1';
+
+modificando mais de um dados em uma tabela: update cursos set nome='PHP', ano='2015'  where idcurso = '4';
+
+limitar quantas linhas serão afetadas : limit 1 ; 
+
+apagar todos os registros da tabela: truncate table cursos; 
+	
+
+
+
+
+
+
+
+

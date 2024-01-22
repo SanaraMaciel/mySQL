@@ -1,0 +1,20 @@
+Requisitos e Funcionalidades do Achei
+
+
+- Cadastrar Profissional
+
+- Criar cartão de visita
+
+- publicar cartão de visita
+
+- enviar fotos de serviços realizados pelo profissionais
+
+- agrupar por categoria profissional
+
+- mala direta 
+ 
+- promoções para os profissionais(tipo cadastro de banner com promoção válida por mês)
+
+- Ao clicar em mais mostrar se o local está aberto(funcionando) naquele horário. 
+
+- 

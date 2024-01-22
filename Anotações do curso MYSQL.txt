@@ -1,0 +1,65 @@
+D - Durável
+I - Isolamento 
+C - Consistência
+A - Atomicidade
+
+
+Esta coluna inicia uma série dedicada às
+funções de strings do MySQL. Iniciaremos nosso estudo
+a partir de 3 delas: Like, Left e Right.
+
+A função Like, do MySQL, faz uma
+busca sofisticada por uma substring dentro de uma string informada.
+Temos, dentro da função LIKE, os seguintes caracteres
+especiais utilizados em substrings:
+
+% – Busca zero ou
+mais caracteres;
+_ – Busca somente um caractere.
+
+Vamos ver agora alguns exemplos de utilização
+da função LIKE:
+
+Exemplo 01:
+
+SELECT enome
+
+From emp
+Where enome like ‘M%’;
+
+
+O caracter ‘%’ na consulta acima indica
+que estamos procurando nomes que possuem a incial M.
+
+Exemplo 02:
+
+SELECT enome
+From emp
+Where enome like ‘_a%’;
+
+
+
+O caracter ‘_’ na consulta acima indica
+que estamos procurando nomes nos quais a letra A é a segunda
+letra do nome.
+
+SELECT name, title, dept FROM employee WHERE title LIKE 'Pro%'; 
+
+vai pegar todos os 
+
+Pro-fessores 
+Pro-gramadores 
+Pro-fetas
+
+Engine é a máquina que vai poder criar as tabelas - InnoDB essa engine pode criar tabelas com chaves estrangeiras.
+
+o MySIAM não suporta chave estrangeira. 
+
+4 regras de uma boa transação ACID
+
+A- Atomicidade não pode ser dividida em subtarefas, apenas por completo. 
+C- Consistência nos dados. deve continuar cons. após uma transação. 
+I- Isolamento qdo se tem 2 transações acontecendo paralelamente ele não pode dar BO nelas.
+D- Durabilidade tem q durar o tempo que for necessário enquanto eu precisar desses dados, até o fim da execução.
+
+  

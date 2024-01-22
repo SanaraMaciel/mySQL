@@ -1,0 +1,16 @@
+Abrir console (pelo servidor)
+
+- show database: mostra todos os bancos que estão alocados naquele servidor.
+
+- status : Current database : mostra qual bd esta aberto. 
+
+- use database <nome do banco>: abre o bd 
+
+- show tables: mostra as tabelas do BD;
+
+- describe <nome da tabela>: mostra a descrição da tabela;
+
+- pode-se utilizar todos os comandos de sql mesmo que seja no terminal deste servidor. 
+
+-  show create table amigos: lista qual o comando foi utilizado para criara tabela e sua estrutura.
+
